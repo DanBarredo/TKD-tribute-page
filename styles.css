@@ -1,10 +1,13 @@
 * {
-    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Open Sans", sans-serif;
     line-height: 1.5;
 }
 body {
     background-color: #fff;
     margin: 0;
+}
+ul {
+    list-style-type: none;
 }
 #main {
     background-color: #f4f4f4;
@@ -12,6 +15,12 @@ body {
     margin: 30px 10px;
     padding: 15px;
     border-radius: 10px;
+}
+#title {
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px #222;
 }
 #image {
     display: block;
@@ -21,26 +30,37 @@ body {
     margin-right: auto;
     border-radius: 10px;
 }
-.tribute section {
-    display: flex;
+#tribute-info {
+    text-align: left;
+}
+#tribute-info h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+#tribute-info ul {
+    line-height: 200%;
 }
 #tenet-container {
+    margin-top: 2rem;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
 .tenet-item {
-    margin: 1.5rem;
+    padding: 10px;
 }
 .tenet-item:hover {
     scale: 1.2;
 }
 
 /* respsonsiveness - small screens */
-@media (max-width: 600px) {
+@media (max-width: 480px) {
     #title {
+        letter-spacing: normal;
     }
     #tenet-container {
-    }
-    .tenet-item {
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
     }
 }
